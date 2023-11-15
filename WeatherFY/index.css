@@ -1,0 +1,289 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Orbitron', sans-serif;
+  box-sizing: border-box;
+  transition: .3s ease;
+  letter-spacing: 1.7px;
+}
+html{
+  scroll-behavior: smooth;
+} 
+
+/* Scroll bar ---------------------------------------------------------------------------------- */
+
+body::-webkit-scrollbar{   
+  width: 6px;
+} 
+body::-webkit-scrollbar-track{
+  visibility: hidden;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: rgb(56, 10, 121);
+}
+
+@media(min-width: 1440px) and (max-width: 2660px){
+  .section1,body{
+   height: 130vh;
+ }
+ .caption{
+  font-size: 30px;
+ }
+ .caption2{
+  font-size: 17px;
+ }
+ .section2a{
+  width: 19rem;
+}
+.section2a h1{
+  font-size: 40px;
+}
+.section2 span{
+  font-size: 10px;
+}
+}
+
+
+@media(min-width: 960px) and (max-width: 1444px){
+  .section1,body{
+    height: 160vh;
+  }
+  .caption{
+   font-size:30px;
+  }
+  .caption2{
+   font-size:16px;
+  }
+  .section2a{
+    width: 21rem;
+  }
+ .section2a h1{
+   font-size: 46px;
+ }
+ .section2 span{
+   font-size: 12px;
+ }
+}
+
+
+@media(min-width: 720px) and (max-width: 960px){
+  .section1,body{
+    height: 175vh;
+  }
+  .caption{
+   font-size: 25px;
+  }
+  .caption2{
+   font-size:15px;
+  }
+  .section2a{
+   width: 21rem;
+ }
+ .section2a h1{
+   font-size: 45px;
+ }
+ .section2 span{
+   font-size: 9px;
+ }
+}
+
+
+@media(min-width:540px) and (max-width: 720px) {
+  .section1,body{
+    height: 195vh;
+  }
+  .caption{
+   font-size: 25px;
+  }
+  .caption2{
+   font-size:15px;
+  }
+  .section2a{
+    width: 21rem;
+  }
+ .section2a h1{
+   font-size: 45px;
+ }
+ .section2 span{
+   font-size: 12px;
+ }
+}
+@media(min-width:420px) and (max-width: 540px) {
+  .section1,body{
+    height: 210vh;
+  }
+  .caption{
+   font-size: 25px;
+  }
+  .caption2{
+   font-size:15px;
+  }
+  .section2a{
+    width: 18rem;
+ }
+ .section2a h1{
+   font-size: 38px;
+ }
+ .section2 span{
+   font-size: 12px;
+ }
+}
+
+@media(min-width:375px) and (max-width: 420px) {
+  .section1,body{
+    height: 210vh;
+  }
+  .caption{
+   font-size: 25px;
+  }
+  .caption2{
+   font-size:15px;
+  }
+  .section2a{
+   width: 16rem;
+ }
+ .section2a h1{
+   font-size: 33px;
+ }
+ .section2 span{
+   font-size: 10px;
+ }
+}
+@media(min-width:0px) and (max-width: 375px) {
+  .section1,body{
+    height: 213vh;
+  }
+  .caption{
+   font-size: 25px;
+  }
+  .caption2{
+   font-size:15px;
+  }
+  .section2a{
+    width: 16rem;
+  }
+ .section2a h1{
+   font-size: 33px;
+ }
+ .section2 span{
+   font-size: 9px;
+ }
+}
+
+
+/* ---------------------------------------------------------------------- */
+
+
+body{
+  background-image: url('./images/bg3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.navbar-brand,.nav-link{
+  font-family: 'Silkscreen', sans-serif;
+}
+.section1{  
+  background-image: linear-gradient( rgba(47, 28, 107, 0.848), rgb(0, 0, 0));
+}
+.container{
+  display: flex;
+  position: relative;
+  color: white;
+}
+.caption{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  background-color: rgba(47, 28, 107, 0.221);
+  box-shadow: 0px 0px 40px 8px rgba(0, 0, 0, 0.256);
+}
+.search-box{
+  width: 100%;
+  position: relative;
+  background-color: rgba(47, 28, 107, 0.221);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Orbitron', sans-serif;
+
+}
+.search-bar{
+  left: 15%;
+  position: absolute;
+  width: 65%;
+  background-color: transparent;
+  outline:none ;
+}
+.weather-info img{
+  width: 25%;  
+}
+
+.humidity,.wind,.pressure{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.weather-details p,span{
+  font-size: 10px;
+}
+.text{
+  margin-left: 10px;
+}
+.caption{
+  transition: 1s;
+  font-family: 'Orbitron', sans-serif;
+}
+.caption2{
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0);
+  font-family: 'Orbitron', sans-serif;
+  transition: 1s;
+}
+body:hover .caption2{
+  color: rgb(255, 255, 255);
+  font-family: 'Orbitron', sans-serif;
+}
+.section2{
+  text-align: center;
+  color:rgb(75, 10, 139);
+}
+.section2a{
+  color:rgb(75, 10, 139);
+}
+.section2a h1{
+  font-family: 'Silkscreen', sans-serif;
+  white-space: nowrap;
+  border-right: 5px double ;
+  overflow: hidden;
+  animation:typing 12s steps(9) infinite,
+            cursor .4s step-end infinite alternate;
+}
+@keyframes typing{
+  0% {width:0%}
+  25%{width: 100%;}
+  50% {width:100%}
+  75%{width: 100%;}
+  80%{width: 100%;}
+  100% {width:0%}
+}
+@keyframes cursor{
+  50%{border-color: transparent;}
+}
+
+.refresh{
+  width: 13%;
+  background-color: rgba(47, 28, 107, 0.222);
+  box-shadow: 0px 0px 40px 8px rgba(0, 0, 0, 0.256);
+
+}
+
+
+
+
+
